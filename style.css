@@ -1,0 +1,186 @@
+body {
+	color: rgb(166, 166, 83);
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	line-height: 1.6em;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.top {
+	background-color: rgb(92, 92, 95);
+	background-position: center;
+	min-height: 500px;
+	text-align: left;
+	padding-bottom: 40px;
+}
+
+/*-----------------------------------------*/
+
+.btn {
+	border: 1px solid white;
+	padding: 4px;
+	color: white;
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: rgb(166, 166, 83);
+	border-color: rgb(166, 166, 83);
+}
+
+.top-box img {
+	height: 400px;
+	width: 450px;
+}
+
+.box-container-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.intro {
+	border: 2px;
+	width: 100%;
+	float: left;
+	margin-top: 100px;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+
+
+/*-------------------nav-----------------*/
+
+.nav-bar {
+	padding-top: 30px;
+	background-color: white;
+}
+
+.nv-box img {
+	height: 400px;
+	width: 450px;
+}
+
+.nav-box-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav ul li {
+	list-style-type: none;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 1px;
+}
+
+nav ul li a:hover {
+	color: rgb(166, 166, 83);
+	font-size: 16px;
+}
+
+nav {
+	background-color: rgb(92, 92, 95);
+	margin-top: 50px;
+	padding-right: 20px;
+	border-right: 1px solid white;
+	border-top-right-radius: 20px;
+	padding-bottom: 100px;
+}
+
+
+/*------------------third section---------------*/
+
+.bottom-box img {
+	height: 400px;
+	width: 450px;
+}
+
+.box-container-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 50px;
+} 
+
+#bottom-box-2 {
+	margin-left: 20px;
+}
+
+/*----------------------footer----------------*/
+
+.page-footer {
+	background-color: rgb(92, 92, 95);
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/*-------------animation------------*/
+
+h1 {
+	position: relative;
+	animation: heading;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes heading {
+	0%{top: -1000px}
+	100%{top: 0px;}
+}
+
+.intro p {
+	position: relative;
+	animation: content;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes content {
+	0% {left: -1000px;}
+	100% {left: 0px;}
+}
+
+.nav-bar {
+	position: relative;
+	animation: nav-1;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes nav-1 {
+	0% {right: -1000px;}
+	100% {right: 0px;}
+}
+
+.btn {
+	position: relative;
+	animation: button-1;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes button-1 {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
